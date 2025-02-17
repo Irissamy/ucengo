@@ -1,0 +1,437 @@
+.news {
+  &-title {
+    font-size: 50px;
+    color: #e4e4e4;
+    border-bottom: solid 1px #e4e4e4;
+    font-weight: 700;
+    .more {
+      cursor: pointer;
+      font-size: 22px;
+    }
+  }
+  &-text {
+    color: #e4e4e4;
+    @include textWrap(3);
+  }
+  &-carousel-btns {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    .fa-angle-left,
+    .fa-angle-right {
+      padding: 0px 5px;
+      background: #116e50;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.core-functional {
+  display: flex;
+  padding: 12px 16px;
+  position: relative;
+  border-top: 1px solid #116e50;
+  border-bottom: 1px solid #116e50;
+  &__lf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__rt {
+    margin-left: auto;
+  }
+  //user-info
+  .user-info {
+    display: flex;
+    align-items: flex-start;
+    color: #e4e4e4;
+    &__id {
+      font-size: 14px;
+      font-weight: 600;
+      padding-right: 8px;
+      line-height: 24px;
+    }
+    &__rank {
+      min-height: 24px;
+      background: #116e50;
+      width: max-content;
+      max-width: 100%;
+      padding: 0 16px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+  .user-wallet {
+    font-size: 16px;
+    color: white;
+    .text {
+      font-weight: 600;
+    }
+    .icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      margin-left: -8px;
+      mask-image: url('../images/icon-calendar_search.png');
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+      background-color: white;
+    }
+    .text {
+      margin: 0;
+      color: inherit;
+      font-weight: 500;
+      &__symbol {
+        padding: 0 5px;
+      }
+    }
+  }
+  .functional-list {
+    display: flex;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 0px 16px;
+      .item-icon {
+        height: 36px;
+        margin-top: 4px;
+        &__img {
+          height: 100%;
+          display: block;
+          vertical-align: middle;
+        }
+      }
+      .item-text {
+        font-size: 12px;
+        color: white;
+        margin: 0;
+        font-weight: 600;
+        line-height: 12px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
+.games {
+  background-color: #4e4e4e;
+  background-size: cover;
+  &-title {
+    color: $light-purple;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+  }
+  &-cards {
+    display: flex;
+  }
+  &-card {
+    max-width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(138, 138, 138, 0.8);
+    box-sizing: border-box;
+    &__name {
+      color: #484b61;
+      .name {
+        font-size: 18px;
+        font-weight: 800;
+        @include textWrap(1);
+      }
+    }
+    &__team {
+      color: $middle-purple;
+      .name {
+        @include textWrap(1);
+      }
+    }
+    &__btn {
+      border: none;
+      background: $dark-purple;
+      color: white;
+      letter-spacing: 1px;
+      width: 200px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+.hot-games {
+  background-color: #585858;
+  border-bottom: 1px solid #666;
+  &__title {
+    font-size: 10px;
+    color: #f0f0f0;
+    padding-bottom: 8px;
+  }
+  &__scroll-content {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+  }
+  .scroll-x {
+    display: inline-block;
+    float: none;
+  }
+  .game-list {
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    left: 0;
+    transition: left 0.35s;
+    &__item {
+      min-width: 250px;
+      line-height: 0;
+      font-size: 0;
+      vertical-align: top;
+      position: relative;
+      display: flex;
+      flex: 1 0 250px;
+      user-select: none;
+      &:after {
+        content: ' ';
+        border-right: 1px solid #666;
+        height: calc(100% - 20px);
+        position: absolute;
+        right: 0;
+        top: 10px;
+      }
+      &:last-child:after {
+        border-right: 0px;
+      }
+    }
+    .item-content {
+      width: 100%;
+    }
+    .item-inner-content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .game-detail {
+      display: flex;
+      position: relative;
+      border-top: 0;
+      width: 100%;
+    }
+    .detail-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .detail-info {
+      min-height: 13px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: #f0f0f0;
+      margin: 5px 0 2px;
+      flex-direction: row;
+      &__text {
+        font-size: 12px;
+        color: #d4d4d4;
+        padding-left: 4px;
+        &:first-child {
+          padding-left: 0px;
+        }
+      }
+    }
+    .detail-team {
+      display: flex;
+      position: relative;
+      flex: 1 0 auto;
+      max-width: 100%;
+      font-size: 13px;
+      color: #f0f0f0;
+      margin-top: 9px;
+      &__team {
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: center;
+        min-height: 20px;
+        overflow: hidden;
+        font-size: 13px;
+        color: #f0f0f0;
+        line-height: 17px;
+      }
+      .team-kit {
+        display: flex;
+        height: 30px;
+        min-width: 30px;
+        margin-bottom: 3px;
+        align-items: center;
+        justify-content: center;
+        &__img {
+          width: 24px;
+          height: 24px;
+          max-width: 24px;
+          max-height: 24px;
+          flex: 1 1 0;
+        }
+        .team-img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .team-name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 0 8px;
+        text-align: center;
+      }
+      &__vs {
+        position: absolute;
+        left: 50%;
+        top: 9px;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        color: #e4e4e4;
+        line-height: 17px;
+      }
+    }
+    .game-odds {
+      display: flex;
+      width: 100%;
+      border: 0;
+      padding-bottom: 10px;
+      &__vs {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #e4e4e4;
+      }
+      &__odd {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 45px;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 1;
+        padding: 0 10px;
+        border-right: 1px solid #585858;
+      }
+      .odd-title {
+        color: #f0f0f0;
+        font-weight: 600;
+        padding-bottom: 8px;
+      }
+      .odd-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #ddd;
+        flex: 0 0 auto;
+        padding-left: 4px;
+        &.-highlight {
+          color: #ffdf1b;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+    &.-market {
+      .detail-info__text {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .game-detail {
+        padding-bottom: 12px;
+        border-bottom: 1px solid #d4d4d4;
+        margin-bottom: 16px;
+      }
+      .team-kit {
+        height: 44px;
+        &__img {
+          width: 44px;
+          height: auto;
+          max-width: 44px;
+          max-height: unset;
+        }
+      }
+      .game-odds__odd {
+        flex-direction: column;
+      }
+      .odd-text {
+        font-size: 14px;
+        &.-highlight {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.hot-games-list {
+  &.-market {
+    padding: 16px;
+    .hot-games {
+      margin-bottom: 16px;
+      border-radius: 8px;
+    }
+  }
+}
+.wallet {
+  background: #383838;
+  border-top: 1px solid #116e50;
+  border-bottom: 1px solid #116e50;
+  justify-content: space-between;
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  &-balance {
+    border-right: solid 1px #585858;
+    a {
+      color: #e4e4e4;
+    }
+  }
+  &-withdrawal {
+    img {
+      width: 35px;
+    }
+    a {
+      color: #e4e4e4;
+    }
+  }
+}
+.slick-track {
+  padding: 10px 0px;
+  display: flex !important;
+  justify-content: space-around;
+}
+.footer {
+  color: $dark-purple;
+  font-size: 15px;
+  &-link {
+    color: $dark-purple;
+  }
+}

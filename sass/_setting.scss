@@ -1,0 +1,311 @@
+$light-purple: #eceef8;
+$middle-purple: #5f80f5;
+$blue-purple: #5894ea;
+$light-blue-purple: #92b6ec;
+$dark-purple: #5f80f5;
+
+@mixin textWrap($row) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+  overflow: hidden;
+}
+@mixin inputSet() {
+  background: $dark-purple;
+  border: solid 1px $dark-purple;
+  color: $light-purple;
+  padding: 3px 5px;
+  border-radius: 5px;
+  &::placeholder {
+    color: $light-purple;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  &:focus {
+    border: solid 1px $dark-purple;
+    outline: none;
+  }
+}
+@mixin borderLine() {
+  border-right: solid 1px #1c253b;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    right: .5px;
+    width: 1px;
+    top: 0px;
+    height: 100%;
+    background: #d8e1f22a;
+  }
+}
+@mixin bluePrimaryBtn($width) {
+  cursor: pointer;
+  padding: 12px 0px;
+  background: #146F50;
+  color: white;
+  width: $width;
+  border: none;
+  transition: .3s;
+  &:hover {
+    color: white;
+  }
+}
+@mixin blueSecondBtn($width) {
+  cursor: pointer;
+  padding: 12px 0px;
+  color: #585858;
+  width: $width;
+  background: transparent;
+  border: 1px solid #C3C3C3;
+  transition: .3s;
+  &:hover {
+    color: #585858;
+  }
+}
+.fa-ellipsis-h.more {
+  color: $dark-purple;
+}
+
+body {
+  height: 100vh;
+  background-image: none;
+  background-color: #404040;
+}
+.container-fluid {
+  max-width: 1500px;
+}
+a {
+  text-decoration: none;
+}
+.color-lbp {
+  color: #54E5B5;
+}
+.color-red {
+  color: #E02323 !important;
+}
+.color-green {
+  color: #54E5B5 !important;
+}
+.color-gray {
+  color: #C3C3C3 !important;
+}
+.bg-dark-purple {
+  background: $dark-purple !important;
+}
+.form-group {
+  max-width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  label {
+    font-weight: 900;
+  }
+  input {
+    @include inputSet;
+  }
+  input[type='checkbox'] {
+    appearance: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $dark-purple;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: $dark-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:checked {
+      border-color: $dark-purple;
+      &::after {
+        position: absolute;
+        font-weight: 900;
+        content: '✓';
+        font-size: 18px;
+        color: #585858;
+      }
+    }
+  }
+  .password {
+    color: #484b61;
+    font-weight: 500;
+  }
+}
+.modal {
+  .form-group {
+    max-width: 100%;
+    label {
+      color: #585858;
+    }
+    input {
+      padding: 8px;
+      color: #585858;
+      background: #FAFAFA;
+      border-radius: 0;
+      border: none;
+      border-bottom: 2px solid #D4D4D4;
+      &::placeholder {
+        color: #C3C3C3;
+      }
+    }
+  }
+}
+.back-btn {
+  @include bluePrimaryBtn(100px);
+}
+.dropdown.filter {
+  width: 100%;
+  button.dropdown-toggle {
+    background: $dark-purple;
+    color: $light-purple;
+    width: 100%;
+  }
+  &-menu {
+    width: 100%;
+  }
+}
+.light-purple-bg {
+  background: $light-purple;
+}
+
+@media screen and ( min-width: 575px ) {
+  body {
+    background-image: url('../images/Bet365_bg_2_b.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .dropdown.filter {
+    max-width: 300px;
+  }
+}
+
+
+.pagination {
+  margin-bottom: 0px;
+  * {
+    background: none;
+    color: #FFFFFF;
+    border: none;
+  }
+  .page-item {
+    font-size: 18px;
+    &:hover {
+      .page-link {
+        color: #116E50;
+        font-weight: 600;
+        background: none;
+        text-decoration: underline;
+      }
+    }
+  }
+  .page-item.active {
+    color: #26FFBE;
+    font-weight: 600;
+    .page-link {
+      background: none;
+      border: none;
+      color: #26FFBE;
+      text-decoration: underline;
+    }
+  }
+}
+.page-btn {
+  display: block;
+  width: 8px;
+  height: 14px;
+  margin: 0px 8px;
+  background-image: url('../images/icon-arrow_right.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.-left {
+    background-image: url('../images/icon-arrow_left.png');
+  }
+  &.-right {
+    background-image: url('../images/icon-arrow_right.png');
+  }
+  &__icon {
+    display: block;
+    width: 100%;
+  }
+}
+.board {
+  &-wrap {
+    background: white;
+    margin: auto;
+  }
+  &-text {
+    height: 250px;
+    overflow: auto;
+  }
+}
+.breadcrumb {
+  &-item {
+    a {
+      color: #484b61;
+    }
+  }
+  &-item.active {
+    font-weight: 600 !important;
+    color: $dark-purple !important;
+  }
+}
+@media screen and ( min-width: 768px ) {
+  .float-top-end {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-70px);
+    max-width: 200px !important;
+  }
+}
+
+@media screen and ( min-width: 575px ) {
+  .sm-dropdown {
+    max-width: 200px;
+    margin-left: auto;
+    &-menu {
+      max-width: 200px;
+    }
+  }
+}
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #000000e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  img {
+    width: 80px;
+    position: relative;
+    z-index: 999;
+  }
+  &::after {
+    content: '';
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+    display: block;
+    background: #374874;
+    box-shadow: 0px 2px 0px 1px #8cbbf8;
+    animation: rotate 1.5s linear infinite;
+  }
+}
+.rule {
+  color: #E4E4E4;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+};
