@@ -170,7 +170,7 @@ a {
   background: #eceef8;
 }
 
-@media screen and (min-width: 575px) {
+/* @media screen and (min-width: 575px) {
   body {
     background-image: url('../images/Bet365_bg_2_b.jpeg');
     background-size: cover;
@@ -179,7 +179,7 @@ a {
   .dropdown.filter {
     max-width: 300px;
   }
-}
+} */
 .pagination {
   margin-bottom: 0px;
 }

@@ -40,19 +40,19 @@ a {
 }
 
 .color-lbp {
-  color: #54E5B5;
+  color: #54e5b5;
 }
 
 .color-red {
-  color: #E02323 !important;
+  color: #e02323 !important;
 }
 
 .color-green {
-  color: #54E5B5 !important;
+  color: #54e5b5 !important;
 }
 
 .color-gray {
-  color: #C3C3C3 !important;
+  color: #c3c3c3 !important;
 }
 
 .bg-dark-purple {
@@ -129,22 +129,22 @@ a {
 .modal .form-group input {
   padding: 8px;
   color: #585858;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 0;
   border: none;
-  border-bottom: 2px solid #D4D4D4;
+  border-bottom: 2px solid #d4d4d4;
 }
 .modal .form-group input::-moz-placeholder {
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 .modal .form-group input::placeholder {
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 
 .back-btn {
   cursor: pointer;
   padding: 12px 0px;
-  background: #146F50;
+  background: #146f50;
   color: white;
   width: 100px;
   border: none;
@@ -180,55 +180,6 @@ a {
     max-width: 300px;
   }
 }
-.pagination {
-  margin-bottom: 0px;
-}
-.pagination * {
-  background: none;
-  color: #FFFFFF;
-  border: none;
-}
-.pagination .page-item {
-  font-size: 18px;
-}
-.pagination .page-item:hover .page-link {
-  color: #116E50;
-  font-weight: 600;
-  background: none;
-  text-decoration: underline;
-}
-.pagination .page-item.active {
-  color: #26FFBE;
-  font-weight: 600;
-}
-.pagination .page-item.active .page-link {
-  background: none;
-  border: none;
-  color: #26FFBE;
-  text-decoration: underline;
-}
-
-.page-btn {
-  display: block;
-  width: 8px;
-  height: 14px;
-  margin: 0px 8px;
-  background-image: url("../images/icon-arrow_right.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.page-btn.-left {
-  background-image: url("../images/icon-arrow_left.png");
-}
-.page-btn.-right {
-  background-image: url("../images/icon-arrow_right.png");
-}
-.page-btn__icon {
-  display: block;
-  width: 100%;
-}
-
 .board-wrap {
   background: white;
   margin: auto;
@@ -293,7 +244,7 @@ a {
 }
 
 .rule {
-  color: #E4E4E4;
+  color: #e4e4e4;
 }
 
 @keyframes rotate {
@@ -1036,7 +987,7 @@ a {
 .modal-btn {
   cursor: pointer;
   padding: 12px 0px;
-  background: #146F50;
+  background: #146f50;
   color: white;
   width: 100%;
   border: none;
@@ -1080,7 +1031,7 @@ a {
 .modal .announcement-back-btn {
   cursor: pointer;
   padding: 12px 0px;
-  background: #146F50;
+  background: #146f50;
   color: white;
   width: 80px;
   border: none;
@@ -1111,7 +1062,7 @@ a {
 .modal-check-btn {
   cursor: pointer;
   padding: 12px 0px;
-  background: #146F50;
+  background: #146f50;
   color: white;
   width: 100%;
   border: none;
