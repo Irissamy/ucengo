@@ -5,10 +5,7 @@
   margin: 0 auto;
   max-width: 576px;
   height: 100%;
-  background-color: #404040;
-  &.-member {
-    background-color: #EBEDED;
-  }
+  background-color: $white;
 }
 .scroll-content {
   overflow-y: auto;

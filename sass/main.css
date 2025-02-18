@@ -6,10 +6,7 @@
   margin: 0 auto;
   max-width: 576px;
   height: 100%;
-  background-color: #404040;
-}
-.main-content.-member {
-  background-color: #EBEDED;
+  background-color: #ffffff;
 }
 
 .scroll-content {
@@ -28,7 +25,7 @@
 body {
   height: 100vh;
   background-image: none;
-  background-color: #404040;
+  background-color: #3840ff;
 }
 
 .container-fluid {
@@ -333,17 +330,6 @@ a {
   color: #5f80f5;
   font-size: 13px;
 }
-.header .nav-item .nav-link.active {
-  color: #404040;
-}
-.header .nav-item .nav-link {
-  color: #404040;
-  font-size: 15px;
-  font-weight: 500;
-}
-.header .nav-item .nav-link:hover {
-  color: #404040;
-}
 .header-login {
   right: 0px;
   color: #e0e2e1;
@@ -355,20 +341,34 @@ a {
   color: #5894ea;
 }
 
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar-nav .nav-item .nav-link__icon {
+  width: 20px;
+  margin-right: 16px;
+}
+.navbar-nav .nav-item:last-child .nav-link__icon {
+  margin-right: 0px;
+}
+
 .header-wrap {
-  z-index: 998;
   position: sticky;
   top: 0px;
+  z-index: 998;
   display: flex;
   align-items: center;
   flex-shrink: 0;
   width: 100%;
-  height: 62px;
-  background: #116e50;
-  box-shadow: 7px 5px 7px rgba(95, 128, 245, 0.1);
+  min-height: 80px;
+  border-top: 10px solid #3840ff;
+  background: #ffffff;
 }
 .header-wrap .navbar-brand {
   padding: 0px;
+}
+.header-wrap .navbar-brand__logo {
+  height: 27px;
 }
 
 .offcanvas-backdrop {
@@ -402,38 +402,6 @@ a {
 
 .navbar {
   flex-wrap: nowrap;
-}
-
-.news-title {
-  font-size: 50px;
-  color: #e4e4e4;
-  border-bottom: solid 1px #e4e4e4;
-  font-weight: 700;
-}
-.news-title .more {
-  cursor: pointer;
-  font-size: 22px;
-}
-.news-text {
-  color: #e4e4e4;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-.news-carousel-btns {
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-}
-.news-carousel-btns .fa-angle-left,
-.news-carousel-btns .fa-angle-right {
-  padding: 0px 5px;
-  background: #116e50;
-}
-.news-carousel-btns .fa-angle-left:hover,
-.news-carousel-btns .fa-angle-right:hover {
-  opacity: 0.7;
 }
 
 .core-functional {
@@ -539,324 +507,6 @@ a {
   padding-top: 8px;
 }
 
-.games {
-  background-color: #4e4e4e;
-  background-size: cover;
-}
-.games-title {
-  color: #eceef8;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  font-size: 25px;
-}
-.games-cards {
-  display: flex;
-}
-.games-card {
-  max-width: 250px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.8);
-  box-sizing: border-box;
-}
-.games-card__name {
-  color: #484b61;
-}
-.games-card__name .name {
-  font-size: 18px;
-  font-weight: 800;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-}
-.games-card__team {
-  color: #5f80f5;
-}
-.games-card__team .name {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-}
-.games-card__btn {
-  border: none;
-  background: #5f80f5;
-  color: white;
-  letter-spacing: 1px;
-  width: 200px;
-}
-.games-card__btn:hover {
-  color: white;
-}
-
-.hot-games {
-  background-color: #585858;
-  border-bottom: 1px solid #666;
-}
-.hot-games__title {
-  font-size: 10px;
-  color: #f0f0f0;
-  padding-bottom: 8px;
-}
-.hot-games__scroll-content {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-.hot-games .scroll-x {
-  display: inline-block;
-  float: none;
-}
-.hot-games .game-list {
-  white-space: nowrap;
-  font-size: 0;
-  position: relative;
-  display: flex;
-  width: 100%;
-  left: 0;
-  transition: left 0.35s;
-}
-.hot-games .game-list__item {
-  min-width: 250px;
-  line-height: 0;
-  font-size: 0;
-  vertical-align: top;
-  position: relative;
-  display: flex;
-  flex: 1 0 250px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.hot-games .game-list__item:after {
-  content: " ";
-  border-right: 1px solid #666;
-  height: calc(100% - 20px);
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-.hot-games .game-list__item:last-child:after {
-  border-right: 0px;
-}
-.hot-games .game-list .item-content {
-  width: 100%;
-}
-.hot-games .game-list .item-inner-content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.hot-games .game-list .game-detail {
-  display: flex;
-  position: relative;
-  border-top: 0;
-  width: 100%;
-}
-.hot-games .game-list .detail-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.hot-games .game-list .detail-info {
-  min-height: 13px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  color: #f0f0f0;
-  margin: 5px 0 2px;
-  flex-direction: row;
-}
-.hot-games .game-list .detail-info__text {
-  font-size: 12px;
-  color: #d4d4d4;
-  padding-left: 4px;
-}
-.hot-games .game-list .detail-info__text:first-child {
-  padding-left: 0px;
-}
-.hot-games .game-list .detail-team {
-  display: flex;
-  position: relative;
-  flex: 1 0 auto;
-  max-width: 100%;
-  font-size: 13px;
-  color: #f0f0f0;
-  margin-top: 9px;
-}
-.hot-games .game-list .detail-team__team {
-  flex-basis: 50%;
-  flex-direction: column;
-  align-items: center;
-  min-height: 20px;
-  overflow: hidden;
-  font-size: 13px;
-  color: #f0f0f0;
-  line-height: 17px;
-}
-.hot-games .game-list .detail-team .team-kit {
-  display: flex;
-  height: 30px;
-  min-width: 30px;
-  margin-bottom: 3px;
-  align-items: center;
-  justify-content: center;
-}
-.hot-games .game-list .detail-team .team-kit__img {
-  width: 24px;
-  height: 24px;
-  max-width: 24px;
-  max-height: 24px;
-  flex: 1 1 0;
-}
-.hot-games .game-list .detail-team .team-kit .team-img {
-  display: block;
-  width: 100%;
-}
-.hot-games .game-list .detail-team .team-name {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 0 8px;
-  text-align: center;
-}
-.hot-games .game-list .detail-team__vs {
-  position: absolute;
-  left: 50%;
-  top: 9px;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  font-size: 11px;
-  color: #e4e4e4;
-  line-height: 17px;
-}
-.hot-games .game-list .game-odds {
-  display: flex;
-  width: 100%;
-  border: 0;
-  padding-bottom: 10px;
-}
-.hot-games .game-list .game-odds__vs {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: #e4e4e4;
-}
-.hot-games .game-list .game-odds__odd {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 45px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 1;
-  padding: 0 10px;
-  border-right: 1px solid #585858;
-}
-.hot-games .game-list .game-odds .odd-title {
-  color: #f0f0f0;
-  font-weight: 600;
-  padding-bottom: 8px;
-}
-.hot-games .game-list .game-odds .odd-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #ddd;
-  flex: 0 0 auto;
-  padding-left: 4px;
-}
-.hot-games .game-list .game-odds .odd-text.-highlight {
-  color: #ffdf1b;
-}
-.hot-games .game-list .game-odds .odd-text:first-child {
-  padding-left: 0;
-}
-.hot-games .game-list.-market .detail-info__text {
-  font-size: 18px;
-  font-weight: 600;
-}
-.hot-games .game-list.-market .game-detail {
-  padding-bottom: 12px;
-  border-bottom: 1px solid #d4d4d4;
-  margin-bottom: 16px;
-}
-.hot-games .game-list.-market .team-kit {
-  height: 44px;
-}
-.hot-games .game-list.-market .team-kit__img {
-  width: 44px;
-  height: auto;
-  max-width: 44px;
-  max-height: unset;
-}
-.hot-games .game-list.-market .game-odds__odd {
-  flex-direction: column;
-}
-.hot-games .game-list.-market .odd-text {
-  font-size: 14px;
-}
-.hot-games .game-list.-market .odd-text.-highlight {
-  font-size: 16px;
-}
-
-.hot-games-list.-market {
-  padding: 16px;
-}
-.hot-games-list.-market .hot-games {
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-.wallet {
-  background: #383838;
-  border-top: 1px solid #116e50;
-  border-bottom: 1px solid #116e50;
-  justify-content: space-between;
-}
-.wallet > div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-}
-.wallet-balance {
-  border-right: solid 1px #585858;
-}
-.wallet-balance a {
-  color: #e4e4e4;
-}
-.wallet-withdrawal img {
-  width: 35px;
-}
-.wallet-withdrawal a {
-  color: #e4e4e4;
-}
-
-.slick-track {
-  padding: 10px 0px;
-  display: flex !important;
-  justify-content: space-around;
-}
-
-.footer {
-  color: #5f80f5;
-  font-size: 15px;
-}
-.footer-link {
-  color: #5f80f5;
-}
-
 .side-menu {
   background: white;
   width: 65px;
@@ -892,39 +542,8 @@ a {
   color: #ffffff;
 }
 
-.bottom-menu {
-  position: fixed;
-  z-index: 999;
-  bottom: 0px;
-  width: 100%;
-  max-width: 576px;
-  background: #444444;
-  border-top: solid 2px #116e50;
-}
-.bottom-menu__btns {
-  display: flex;
-  justify-content: space-between;
-}
-.bottom-menu__btn.active {
-  background: #116e50;
-}
-.bottom-menu__btn.active > div {
-  color: #d6dfef;
-}
-.bottom-menu__btn {
-  text-align: center;
-  padding: 5px;
-  width: 20%;
-}
-.bottom-menu__btn:hover {
-  background: #616161;
-  transition: 0.3s;
-}
-.bottom-menu__btn img {
-  width: 25px;
-}
-.bottom-menu__btn > div {
-  color: #b4b6cc;
+.footer {
+  background-color: #171717;
 }
 
 .modal-close {
