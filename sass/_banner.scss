@@ -1,0 +1,10 @@
+.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 185px;
+  background-color: $black;
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
