@@ -40,3 +40,29 @@
     }
   }
 }
+.carousel-item {
+  width: 85%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.banner-swiper {
+  padding-left: 10px;
+  .swiper-wrapper {
+    padding-left: 10px;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
