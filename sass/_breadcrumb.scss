@@ -1,0 +1,13 @@
+.breadcrumb-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 10px;
+}
+.breadcrumb {
+  margin: 0px;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  color: $dark-gray;
+}
