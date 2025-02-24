@@ -47,9 +47,28 @@
   flex-direction: row;
   .nav-item {
     .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &__icon {
         width: 20px;
         margin-right: 16px;
+      }
+      &.search {
+        .nav-link__icon {
+          display: none;
+          &:nth-child(2n) {
+            display: block;
+          }
+        }
+        &.collapsed {
+          .nav-link__icon {
+            display: block;
+            &:nth-child(2n) {
+              display: none;
+            }
+          }
+        }
       }
     }
     &:last-child {
@@ -65,49 +84,49 @@
   position: sticky;
   top: 0px;
   z-index: 998;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
   width: 100%;
-  min-height: 80px;
   border-top: 10px solid $primary;
-  background: $white;
   .navbar-brand {
     padding: 0px;
     &__logo {
       height: 27px;
     }
   }
-}
-.offcanvas-backdrop {
-  top: 62px;
-}
-.offcanvas {
-  position: absolute;
-  background: #383838;
-  max-width: 150px;
-  top: 62px;
-  * {
-    color: $light-purple;
-  }
-  .nav-item ~ .nav-item {
-    border-top: solid 1px #b5b5b5;
-  }
-  .nav-item {
-    &:hover,
-    .nav-link.active {
-      color: #ffdf1b !important;
+  .collapse,
+  .collapsing {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $dark-gray;
+    .input-group {
+      padding: 0px 10px;
+    }
+    .form-control {
+      font-size: 14px;
+      font-weight: 600;
+      color: $icon-gray;
+      border: none;
+      background-color: transparent;
+    }
+    .input-group-icon {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      &__img {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
-  .nav-link {
-    color: #c3c3c3;
-    padding: 10px 0px !important;
-    text-align: center !important;
-    &:hover {
-      color: #c3c3c3;
-    }
+  .collapse-content {
+    padding: 10px;
   }
 }
 .navbar {
   flex-wrap: nowrap;
+  min-height: 70px;
+  background-color: $white;
 }

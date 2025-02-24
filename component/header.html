@@ -6,8 +6,10 @@
     <div class="d-flex ms-auto">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">
+          <a class="nav-link search collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
             <img src="../images/icon_search.png" alt="" class="nav-link__icon">
+            <img src="../images/icon_x.png" alt="" class="nav-link__icon">
           </a>
         </li>
         <li class="nav-item">
@@ -24,3 +26,13 @@
     </div>
   </div>
 </nav>
+<div class="collapse" id="collapseExample">
+  <div class="collapse-content">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="請輸入關鍵字" aria-label="請輸入關鍵字">
+      <button class="input-group-icon" type="button">
+        <img src="../images/icon_seach_gray.png" alt="" class="input-group-icon__img">
+      </button>
+    </div>
+  </div>
+</div>
