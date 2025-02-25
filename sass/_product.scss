@@ -285,3 +285,41 @@
     }
   }
 }
+.product-editor {
+  padding: 14px;
+  word-wrap: break-word;
+  word-break: break-all;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // color: #ad0522;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 8px 0;
+  }
+  hr {
+    border: 0;
+    // border-top: 1px solid #e8c7ae;
+    margin: 0;
+    height: 0px;
+  }
+  p,
+  div {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+}
