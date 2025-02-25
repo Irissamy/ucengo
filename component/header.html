@@ -18,7 +18,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
             <img src="../images/icon_menu.png" alt="" class="nav-link__icon">
           </a>
         </li>
@@ -33,6 +34,48 @@
       <button class="input-group-icon" type="button">
         <img src="../images/icon_seach_gray.png" alt="" class="input-group-icon__img">
       </button>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="brand-logo">
+      <img src="../images/logo.png" alt="" class="brand-logo__img">
+    </div>
+    <div class="menu-list-wrap">
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <p class="item-title">目前使用：IRIS 鏈</p>
+          <ul class="user-list">
+            <li class="user-list__item">IRIS</li>
+            <li class="user-list__item">AMY</li>
+          </ul>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="item-title">常見問題</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="item-title">購物車</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="item-title">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="offcanvas-footer">
+    <div class="login-function">
+      <div class="login-function__item">
+        <i class="fas fa-user"></i>
+        <p class="item-title">會員中心</p>
+      </div>
+      <div class="login-function__item">
+        <i class="fa-regular fa-user"></i>
+        <p class="item-title">會員登入</p>
+      </div>
     </div>
   </div>
 </div>

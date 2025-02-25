@@ -1,12 +1,7 @@
 $(function () {
   $(".header-wrap").load("./component/header.html");
-  $(".header-menu-wrap").load("./component/header-menu.html");
   $(".footer-wrap").load("./component/footer.html");
   $(".backtop-wrap").load("./component/backtop.html");
-  $(".side-menu-wrap").load("./component/side-menu.html");
-  $(".bottom-menu-wrap").load("./component/bottom-menu.html");
-  $(".pagination-wrap").load("./component/pagination.html");
-  $(".nodata-wrap").load("./component/nodata.html");
 });
 
 

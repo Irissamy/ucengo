@@ -635,9 +635,76 @@ a {
   background-color: #ffffff;
 }
 
+.offcanvas {
+  width: 80%;
+}
+.offcanvas .brand-logo {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.offcanvas .brand-logo__img {
+  display: block;
+  width: 80%;
+}
+
+.offcanvas-body {
+  padding: 16px 20px;
+}
+.offcanvas-body .menu-list {
+  padding-left: 8px;
+  list-style: none;
+}
+.offcanvas-body .menu-list__item {
+  padding-bottom: 24px;
+}
+.offcanvas-body .menu-list__item .item-title {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+.offcanvas-body .user-list {
+  padding-top: 12px;
+}
+.offcanvas-body .user-list__item {
+  padding-bottom: 8px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.offcanvas-header .btn-close {
+  margin-left: auto;
+}
+
+.offcanvas-footer {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.offcanvas-footer .login-function {
+  padding-left: 8px;
+}
+.offcanvas-footer .login-function__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.offcanvas-footer .login-function__item i {
+  font-size: 16px;
+}
+.offcanvas-footer .login-function__item .item-title {
+  padding-left: 8px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: #333333;
+}
+.offcanvas-footer .login-function__item:last-child {
+  padding-bottom: 0px;
+}
+
 .backtop-wrap {
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   right: 15px;
   bottom: 50px;
 }
@@ -1181,41 +1248,6 @@ a {
   font-weight: 600;
   line-height: 12px;
   padding-top: 8px;
-}
-
-.side-menu {
-  background: white;
-  width: 65px;
-  border-radius: 50px 50px 8px 8px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  z-index: 999;
-  top: 23%;
-  right: 10px;
-}
-.side-menu__btn {
-  padding: 3px;
-  cursor: pointer;
-  display: block;
-}
-.side-menu__btn:hover {
-  background: #5f80f5;
-  transition: 0.3s;
-}
-.side-menu__btn img {
-  width: 40px;
-  padding: 5px;
-}
-.side-menu__btn > div {
-  font-size: 13px;
-  color: #5f80f5;
-}
-.side-menu__btn.withdrawal {
-  background: #5f80f5;
-}
-.side-menu__btn.withdrawal > div {
-  color: #ffffff;
 }
 
 .footer {

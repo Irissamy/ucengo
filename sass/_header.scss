@@ -130,3 +130,68 @@
   min-height: 70px;
   background-color: $white;
 }
+.offcanvas {
+  width: 80%;
+  .brand-logo {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f1f1f1;
+    &__img {
+      display: block;
+      width: 80%;
+    }
+  }
+}
+.offcanvas-body {
+  padding: 16px 20px;
+  .menu-list {
+    padding-left: 8px;
+    list-style: none;
+    &__item {
+      padding-bottom: 24px;
+      .item-title {
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $dark-gray;
+      }
+    }
+  }
+  .user-list {
+    padding-top: 12px;
+    &__item {
+      padding-bottom: 8px;
+      font-size: 14px;
+      color: $dark-gray;
+    }
+  }
+}
+.offcanvas-header {
+  .btn-close {
+    margin-left: auto;
+  }
+}
+.offcanvas-footer {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  .login-function {
+    padding-left: 8px;
+    &__item {
+      display: flex;
+      align-items: center;
+      padding-bottom: 16px;
+      i {
+        font-size: 16px;
+      }
+      .item-title {
+        padding-left: 8px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        color: $dark-gray;
+      }
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
