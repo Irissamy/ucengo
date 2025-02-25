@@ -3,6 +3,22 @@
   align-items: center;
   min-height: 46px;
   padding: 10px;
+  &.-back {
+    background-color: $primary;
+    .breadcrumb-item {
+      color: $white;
+      a {
+        color: $white;
+      }
+      &::before {
+        float: left;
+        padding-left: 0.5rem;
+        color: $white;
+        content: var(--bs-breadcrumb-divider, '/');
+        transform: rotateY(180deg);
+      }
+    }
+  }
 }
 .breadcrumb {
   margin: 0px;
@@ -10,4 +26,8 @@
 .breadcrumb-item {
   font-size: 14px;
   color: $dark-gray;
+}
+
+.breadcrumb-wrap.-back + .product-evaluate {
+  border-bottom: 0px;
 }
