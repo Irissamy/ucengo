@@ -3,11 +3,15 @@
   padding-right: 0px;
 }
 .product-card {
-  .col {
-    flex: none;
-    width: 42%;
-    &:last-child {
-      margin-right: 0px;
+  display: flex;
+  &.-scrollable {
+    overflow-x: auto;
+    .col {
+      flex: none;
+      width: 42%;
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
   .card {

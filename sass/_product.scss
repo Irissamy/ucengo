@@ -323,3 +323,34 @@
     display: block;
   }
 }
+.sort-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  min-height: 64px;
+  background-color: $bg-gray;
+  &__text {
+    margin: 0px;
+    font-size: 14px;
+    color: $dark-gray;
+    .text-red {
+      color: $danger;
+    }
+  }
+}
+.sort-result + .product {
+  padding: 10px;
+  overflow: hidden;
+}
+.product-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 24px 0px;
+  &__text {
+    font-size: 14px;
+    color: $icon-gray;
+  }
+}
