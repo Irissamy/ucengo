@@ -1308,6 +1308,14 @@ a {
   color: #ffffff;
 }
 
+.empty {
+  padding: 0px 16px;
+}
+.empty__img {
+  display: block;
+  width: 100%;
+}
+
 .modal-close {
   background: #146F50;
   font-weight: 700;
