@@ -27,7 +27,31 @@
   font-size: 14px;
   color: $dark-gray;
 }
-
+.breadcrumb-lf {
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 18px;
+    color: $bg-gray;
+  }
+  .breadcrumb-title {
+    padding-left: 16px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $bg-gray;
+  }
+}
+.breadcrumb-rt {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  .breadcrumb-text {
+    margin: 0px;
+    font-size: 14px;
+    color: $white;
+  }
+}
 .breadcrumb-wrap.-back + .product-evaluate {
   border-bottom: 0px;
 }
