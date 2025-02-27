@@ -28,6 +28,9 @@
       background-color: $primary;
     }
   }
+  .cart-list {
+    padding: 24px 0px;
+  }
 }
 .step-trigger {
   padding: 10px 0px;
@@ -68,16 +71,80 @@
     }
   }
 }
+.bs-stepper-content {
+  padding: 16px;
+}
+
+.form-group {
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed #e8e8e8;
+  .form {
+    padding: 16px 10px;
+    border-radius: 8px;
+    border: 1px solid $light-gray;
+    .terms {
+      max-height: 50vh;
+      overflow-y: auto;
+      font-size: 14px;
+      color: $dark-gray;
+      ul {
+        padding-left: 20px;
+      }
+      ol {
+        padding-left: 0px;
+      }
+    }
+  }
+  .terms-link {
+    color: $secondary-light;
+  }
+}
+
+.form-label {
+  font-size: 14px;
+  color: $dark-gray;
+}
+.form-control {
+  font-size: 14px;
+  color: $dark-gray;
+  border-radius: 5px;
+  background-color: $bg-gray;
+  &.-textarea {
+    height: auto;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid $light-gray;
+    background-color: transparent;
+  }
+}
+.form-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+  &__rt {
+    margin-left: auto;
+  }
+  .form-text {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $dark-gray;
+  }
+}
 
 @media (max-width: 520px) {
   .bs-stepper {
     .step-trigger {
       flex-direction: row;
       flex-wrap: nowrap;
-      padding: 10px 0px;
+      padding: 4px 0px;
     }
   }
   .bs-stepper-header {
     text-align: left;
+  }
+  .bs-stepper-content {
+    padding: 16px;
   }
 }

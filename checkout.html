@@ -64,18 +64,216 @@
             <div id="test-l-1" role="tabpanel" class="bs-stepper-pane active dstepper-block"
               aria-labelledby="stepper1trigger1">
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <div class="form-title">
+                  <div class="form-title__lf">
+                    <p class="form-text">訂購人</p>
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="mb-3">
+                    <label for="" class="form-label">訂購人名稱<span class="text-red">*</span></label>
+                    <input class="form-control" type="text" placeholder="請輸入訂購人名稱" aria-label="default input example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">電子信箱</label>
+                    <input class="form-control" type="email" placeholder="xxxxx＠gmail.com"
+                      aria-label="default input example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">手機號碼<span class="text-red">*</span></label>
+                    <input class="form-control" type="tel" placeholder="09xxxxxxxxx" aria-label="default input example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">聯絡地址<span class="text-red">*</span></label>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="台北市" aria-label="default input example">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="中山區" aria-label="default input example">
+                      </div>
+                    </div>
+                    <input class="form-control mt-2" type="text" placeholder="詳細地址" aria-label="default input example">
+                  </div>
+                </div>
               </div>
-              <button class="btn btn-primary" onclick="stepper1.next()">Next</button>
+              <div class="form-group">
+                <div class="form-title">
+                  <div class="form-title__lf">
+                    <p class="form-text">配送設定</p>
+                  </div>
+                  <div class="form-title__rt">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        同訂購人
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="mb-3">
+                    <label for="" class="form-label">收件人名稱<span class="text-red">*</span></label>
+                    <input class="form-control" type="text" placeholder="請輸入收件人名稱" aria-label="default input example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">手機號碼<span class="text-red">*</span></label>
+                    <input class="form-control" type="tel" placeholder="09xxxxxxxxx" aria-label="default input example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">聯絡地址<span class="text-red">*</span></label>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="台北市" aria-label="default input example">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="中山區" aria-label="default input example">
+                      </div>
+                    </div>
+                    <input class="form-control mt-2" type="text" placeholder="詳細地址" aria-label="default input example">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-title">
+                  <div class="form-title__lf">
+                    <p class="form-text">發票設定</p>
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="mb-3">
+                    <label for="" class="form-label">是否需要載具</label>
+                    <div class="form-check-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">是</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">否</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">是否需要統編</label>
+                    <div class="form-check-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">是</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">否</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">輸入統編</label>
+                    <input class="form-control" type="number" placeholder="00000000" aria-label="default input example">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-full" onclick="stepper1.next()">下一步</button>
             </div>
             <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div class="cart-list">
+                <div class="cart-list__item">
+                  <div class="item-img">
+                    <img src="./images/show.png" alt="" class="item-img__img">
+                  </div>
+                  <div class="item-info">
+                    <h5 class="item-info__title">Play Stations 5</h5>
+                    <p class="item-info__text">規格: <span>光碟版</span></p>
+                    <p class="item-info__text">顏色: <span>白色</span></p>
+                    <h6 class="item-info__price">
+                      <p class="price-text">USDT $ 120.00</p>
+                      <p class="price-txt">$450.00</p>
+                    </h6>
+                    <p class="item-info__text">數量: <span>1</span></p>
+                  </div>
+                </div>
+                <div class="cart-list__item">
+                  <div class="item-img">
+                    <img src="./images/show.png" alt="" class="item-img__img">
+                  </div>
+                  <div class="item-info">
+                    <h5 class="item-info__title">Play Stations 5</h5>
+                    <p class="item-info__text">規格: <span>光碟版</span></p>
+                    <p class="item-info__text">顏色: <span>白色</span></p>
+                    <h6 class="item-info__price">
+                      <p class="price-text">USDT $ 120.00</p>
+                      <p class="price-txt">$450.00</p>
+                    </h6>
+                    <p class="item-info__text">數量: <span>1</span></p>
+                  </div>
+                </div>
               </div>
-              <button class="btn btn-primary" onclick="stepper1.previous()">Previous</button>
-              <button type="submit" class="btn btn-primary mt-5">Submit</button>
+              <div class="cart-detail">
+                <p class="cart-detail__title">消費明細 :</p>
+                <div class="cart-detail__item">
+                  <p class="item-title">商品總金額</p>
+                  <p class="item-text text-red">$1230</p>
+                </div>
+                <div class="cart-detail__item">
+                  <p class="item-title">活動折抵</p>
+                  <p class="item-text text-red">-$92</p>
+                </div>
+              </div>
+              <div class="cart-detail-total">
+                <p class="cart-detail-total__title">總金額 : </p>
+                <p class="cart-detail-total__text text-red">USDT DT $1138</p>
+              </div>
+              <div class="form-group">
+                <div class="form-title">
+                  <div class="form-title__lf">
+                    <p class="form-text">合約簽署</p>
+                  </div>
+                </div>
+                <div class="form">
+                  <ul class="terms">
+                    <li>
+                      接受條款
+                      <ol>
+                        <li>
+                          多配數位科技有限公司（下稱本公司）經營之（多pay網站 ）係依據本會員條款提供本網站商品之設計、製造、販賣及銷售(以下簡稱「本服務」)。當會員完成本網站之會員註冊手續、或開始使用本服務時，即表示已完全閱讀、瞭解並同意接受本會員條款及「隱私條款」之全部內容，包括但不限於本服務現有與未來衍生的服務項目及內容。
+                        </li>
+                        <li>
+                          本網站可隨時修訂本條款及「隱私條款」，並將修訂或變更的內容公佈在本網站的網站上，公佈之日起七日後，該修訂或變更的內容即刻生效，本網站將不會個別通知會員，建議會員隨時注意該等修改或變更。如限制行為能力人(如7歲以上、18歲以下之未成年人或受輔助宣告之人)使用本網站提供之服務時，應得法定代理人同意，並遵守本合約及相關法律規定。
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-2 mb-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      我已閱讀並同意服務條款
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      我已閱讀並同意<a href="#" class="terms-link">隱私聲明</a>、<a href="#" class="terms-link">免責聲明</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-title">
+                  <div class="form-title__lf">
+                    <p class="form-text">簽名</p>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control -textarea" placeholder="Leave a comment here"
+                    id="floatingTextarea"></textarea>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-ghost btn-full" onclick="stepper1.previous()">上一步</button>
+                <button type="submit" class="btn btn-secondary btn-full">送出</button>
+              </div>
             </div>
           </form>
         </div>

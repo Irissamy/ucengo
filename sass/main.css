@@ -64,134 +64,42 @@ a {
   background: #5f80f5 !important;
 }
 
-.form-group {
-  max-width: 350px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.text-red {
+  color: #e12727 !important;
 }
-.form-group label {
-  font-weight: 900;
-}
-.form-group input {
-  background: #5f80f5;
-  border: solid 1px #5f80f5;
-  color: #eceef8;
-  padding: 3px 5px;
-  border-radius: 5px;
-}
-.form-group input::-moz-placeholder {
-  color: #eceef8;
-  font-weight: 300;
-  font-size: 13px;
-}
-.form-group input::placeholder {
-  color: #eceef8;
-  font-weight: 300;
-  font-size: 13px;
-}
-.form-group input:focus {
-  border: solid 1px #5f80f5;
-  outline: none;
-}
-.form-group input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #5f80f5;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.5s;
-  border-color: #5f80f5;
+
+.btn-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
-.form-group input[type=checkbox]:checked {
-  border-color: #5f80f5;
+.btn-group .btn {
+  flex: 1;
+  width: auto;
+  margin-right: 8px;
 }
-.form-group input[type=checkbox]:checked::after {
-  position: absolute;
-  font-weight: 900;
-  content: "✓";
-  font-size: 18px;
-  color: #585858;
-}
-.form-group .password {
-  color: #484b61;
-  font-weight: 500;
+.btn-group .btn:last-child {
+  margin-right: 0px;
 }
 
-.modal .form-group {
-  max-width: 100%;
-}
-.modal .form-group label {
-  color: #585858;
-}
-.modal .form-group input {
-  padding: 8px;
-  color: #585858;
-  background: #fafafa;
-  border-radius: 0;
+.btn-secondary {
   border: none;
-  border-bottom: 2px solid #d4d4d4;
+  background-color: #f88600;
 }
-.modal .form-group input::-moz-placeholder {
-  color: #c3c3c3;
-}
-.modal .form-group input::placeholder {
-  color: #c3c3c3;
+.btn-secondary:hover {
+  background-color: #ffc540;
 }
 
-.back-btn {
-  cursor: pointer;
-  padding: 12px 0px;
-  background: #146f50;
-  color: white;
-  width: 100px;
-  border: none;
-  transition: 0.3s;
-}
-.back-btn:hover {
-  color: white;
+.btn-ghost {
+  color: #999999;
+  border: 1px solid #f88600;
+  background-color: transparent;
 }
 
-.dropdown.filter {
+.btn-full {
+  font-size: 16px;
   width: 100%;
-}
-.dropdown.filter button.dropdown-toggle {
-  background: #5f80f5;
-  color: #eceef8;
-  width: 100%;
-}
-.dropdown.filter-menu {
-  width: 100%;
-}
-
-.light-purple-bg {
-  background: #eceef8;
-}
-
-@media screen and (min-width: 575px) {
-  body {
-    background-image: url("../images/Bet365_bg_2_b.jpeg");
-    background-size: cover;
-    background-position: center;
-  }
-  .dropdown.filter {
-    max-width: 300px;
-  }
-}
-.board-wrap {
-  background: white;
-  margin: auto;
-}
-.board-text {
-  height: 250px;
-  overflow: auto;
+  padding: 16px;
+  border-radius: 1000px;
 }
 
 .breadcrumb-item a {
@@ -202,64 +110,6 @@ a {
   color: #5f80f5 !important;
 }
 
-@media screen and (min-width: 768px) {
-  .float-top-end {
-    position: absolute;
-    right: 20px;
-    transform: translateY(-70px);
-    max-width: 200px !important;
-  }
-}
-@media screen and (min-width: 575px) {
-  .sm-dropdown {
-    max-width: 200px;
-    margin-left: auto;
-  }
-  .sm-dropdown-menu {
-    max-width: 200px;
-  }
-}
-.loading {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: rgba(0, 0, 0, 0.8901960784);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-.loading img {
-  width: 80px;
-  position: relative;
-  z-index: 999;
-}
-.loading::after {
-  content: "";
-  width: 90px;
-  height: 90px;
-  border-radius: 50px;
-  position: absolute;
-  display: block;
-  background: #374874;
-  box-shadow: 0px 2px 0px 1px #8cbbf8;
-  animation: rotate 1.5s linear infinite;
-}
-
-.rule {
-  color: #e4e4e4;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .carousel {
   position: relative;
 }
@@ -1154,9 +1004,6 @@ a {
   font-size: 14px;
   color: #333333;
 }
-.sort-result__text .text-red {
-  color: #e12727;
-}
 
 .sort-result + .product {
   padding: 10px;
@@ -1286,22 +1133,23 @@ a {
 .cart-all__rt {
   margin-left: auto;
 }
-.cart-all .form-check-label {
-  font-size: 14px;
-  color: #999999;
-}
 .cart-all .delete-btn {
   font-size: 14px;
   color: #e12727;
   text-decoration: underline;
 }
 
-.cart .form-check-input {
+.form-check-label {
+  font-size: 14px;
+  color: #999999;
+}
+
+.form-check-input {
   width: 18px;
   height: 18px;
   border-radius: 6px;
 }
-.cart .form-check-input:checked {
+.form-check-input:checked {
   background-color: #3840ff;
 }
 
@@ -1395,8 +1243,22 @@ a {
 .cart-detail .item-text {
   margin-left: auto;
 }
-.cart-detail .text-red {
-  color: #e12727;
+
+.cart-detail-total {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+}
+.cart-detail-total__title {
+  margin: 0px;
+  font-size: 14px;
+  color: #333333;
+}
+.cart-detail-total__text {
+  margin: 0px;
+  margin-left: auto;
+  font-size: 20px;
+  color: #333333;
 }
 
 .cart-total {
@@ -1461,6 +1323,9 @@ a {
   color: #ffffff;
   background-color: #3840ff;
 }
+.step .cart-list {
+  padding: 24px 0px;
+}
 
 .step-trigger {
   padding: 10px 0px;
@@ -1502,14 +1367,81 @@ a {
   background-color: transparent;
 }
 
+.bs-stepper-content {
+  padding: 16px;
+}
+
+.form-group {
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed #e8e8e8;
+}
+.form-group .form {
+  padding: 16px 10px;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+}
+.form-group .form .terms {
+  max-height: 50vh;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #333333;
+}
+.form-group .form .terms ul {
+  padding-left: 20px;
+}
+.form-group .form .terms ol {
+  padding-left: 0px;
+}
+.form-group .terms-link {
+  color: #ffc540;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #333333;
+}
+
+.form-control {
+  font-size: 14px;
+  color: #333333;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+.form-control.-textarea {
+  height: auto;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+  background-color: transparent;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.form-title__rt {
+  margin-left: auto;
+}
+.form-title .form-text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
 @media (max-width: 520px) {
   .bs-stepper .step-trigger {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 10px 0px;
+    padding: 4px 0px;
   }
   .bs-stepper-header {
     text-align: left;
+  }
+  .bs-stepper-content {
+    padding: 16px;
   }
 }
 .footer {

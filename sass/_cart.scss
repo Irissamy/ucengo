@@ -5,24 +5,22 @@
   &__rt {
     margin-left: auto;
   }
-  .form-check-label {
-    font-size: 14px;
-    color: $icon-gray;
-  }
   .delete-btn {
     font-size: 14px;
     color: $danger;
     text-decoration: underline;
   }
 }
-.cart {
-  .form-check-input {
-    width: 18px;
-    height: 18px;
-    border-radius: 6px;
-    &:checked {
-      background-color: $primary;
-    }
+.form-check-label {
+  font-size: 14px;
+  color: $icon-gray;
+}
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  &:checked {
+    background-color: $primary;
   }
 }
 .cart-list {
@@ -115,10 +113,24 @@
   .item-text {
     margin-left: auto;
   }
-  .text-red {
-    color: $danger;
+}
+.cart-detail-total {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+  &__title {
+    margin: 0px;
+    font-size: 14px;
+    color: $dark-gray;
+  }
+  &__text {
+    margin: 0px;
+    margin-left: auto;
+    font-size: 20px;
+    color: $dark-gray;
   }
 }
+
 .cart-total {
   display: flex;
   align-items: center;
