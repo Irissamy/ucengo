@@ -30,10 +30,11 @@
     padding: 24px 20px;
   }
   .item-img {
+    flex-shrink: 0;
     overflow: hidden;
     width: 100px;
     height: 100px;
-    margin-left: 16px;
+    margin-left: 12px;
     border-radius: 8px;
     &__img {
       display: block;
@@ -59,6 +60,7 @@
     &__price {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       .price-text {
         font-size: 16px;
         margin: 0px;
@@ -134,6 +136,7 @@
 .cart-total {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding: 24px 28px;
   background-color: $bg-gray;
   &__rt {
@@ -145,6 +148,7 @@
   }
   .total-title {
     margin: 0px;
+    white-space: nowrap;
     font-size: 14px;
     color: $black;
   }
