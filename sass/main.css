@@ -384,6 +384,17 @@ a {
   content: var(--bs-breadcrumb-divider, "/");
   transform: rotateY(180deg);
 }
+.breadcrumb-wrap.-gray {
+  background-color: #f0f0f0;
+}
+.breadcrumb-wrap.-gray .breadcrumb-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.breadcrumb-wrap.-gray i {
+  color: #000000;
+}
 .breadcrumb-wrap.-message {
   background-color: #f0f0f0;
 }
@@ -1842,10 +1853,13 @@ a {
   color: #121212;
 }
 .order-list__item .item-info__result {
+  max-width: 60%;
+  text-align: right;
   color: #333333;
 }
 .order-list__item .item-info__result a {
   color: #3840ff;
+  text-decoration: underline;
 }
 .order-list__item .item-info:last-child {
   padding-bottom: 0px;
@@ -1861,4 +1875,32 @@ a {
 .order-more__text {
   font-size: 14px;
   color: #999999;
+}
+
+.order-detail {
+  padding: 10px 15px;
+}
+
+.order-list + .order-collapse {
+  margin-top: 8px;
+}
+
+.order-collapse {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.collapse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 8px 20px;
+}
+.collapse-header__title {
+  font-size: 16px;
+  color: #121212;
+}
+.collapse-header i {
+  color: #121212;
 }/*# sourceMappingURL=main.css.map */

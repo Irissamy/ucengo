@@ -45,9 +45,12 @@
         color: #121212;
       }
       &__result {
+        max-width: 60%;
+        text-align: right;
         color: $dark-gray;
         a {
           color: $primary;
+          text-decoration: underline;
         }
       }
       &:last-child {
@@ -65,5 +68,29 @@
   &__text {
     font-size: 14px;
     color: $icon-gray;
+  }
+}
+.order-detail {
+  padding: 10px 15px;
+}
+.order-list + .order-collapse {
+  margin-top: 8px;
+}
+.order-collapse {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.collapse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $line-gray;
+  padding: 8px 20px;
+  &__title {
+    font-size: 16px;
+    color: #121212;
+  }
+  i {
+    color: #121212;
   }
 }

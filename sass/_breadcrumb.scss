@@ -19,6 +19,17 @@
       }
     }
   }
+  &.-gray {
+    background-color: $line-gray;
+    .breadcrumb-title {
+      font-size: 16px;
+      font-weight: 400;
+      color: $black;
+    }
+    i {
+      color: $black;
+    }
+  }
   &.-message {
     background-color: $line-gray;
     .breadcrumb-title {
