@@ -117,11 +117,26 @@ a {
     }
   }
 }
+.btn-tab {
+  padding: 16px;
+  border-bottom: 0px;
+  .btn {
+    margin-right: 0px;
+  }
+}
 .btn-secondary {
   border: none;
   background-color: $secondary;
   &:hover {
     background-color: $secondary-light;
+  }
+}
+.btn-light-primary {
+  color: $white;
+  background-color: rgba($primary, 0.6);
+  &.active {
+    color: $white;
+    background-color: $primary;
   }
 }
 .btn-ghost {

@@ -7,6 +7,21 @@
     flex: none;
     padding: 0px 12px;
   }
+  &.fill {
+    .nav-item {
+      flex: auto;
+    }
+    .nav-link {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400;
+      color: $dark-gray;
+      &.active {
+        font-weight: 600;
+        color: $primary;
+      }
+    }
+  }
   .nav-link {
     position: relative;
     padding: 8px 0px 12px 0px;

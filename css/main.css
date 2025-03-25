@@ -85,12 +85,29 @@ a {
   margin-right: 0px;
 }
 
+.btn-tab {
+  padding: 16px;
+  border-bottom: 0px;
+}
+.btn-tab .btn {
+  margin-right: 0px;
+}
+
 .btn-secondary {
   border: none;
   background-color: #f88600;
 }
 .btn-secondary:hover {
   background-color: #ffc540;
+}
+
+.btn-light-primary {
+  color: #ffffff;
+  background-color: rgba(56, 64, 255, 0.6);
+}
+.btn-light-primary.active {
+  color: #ffffff;
+  background-color: #3840ff;
 }
 
 .btn-ghost {
@@ -287,6 +304,19 @@ a {
   flex: none;
   padding: 0px 12px;
 }
+.nav-pills.fill .nav-item {
+  flex: auto;
+}
+.nav-pills.fill .nav-link {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+.nav-pills.fill .nav-link.active {
+  font-weight: 600;
+  color: #3840ff;
+}
 .nav-pills .nav-link {
   position: relative;
   padding: 8px 0px 12px 0px;
@@ -353,6 +383,12 @@ a {
   color: #ffffff;
   content: var(--bs-breadcrumb-divider, '/');
   transform: rotateY(180deg);
+}
+.breadcrumb-wrap.-message {
+  background-color: #f0f0f0;
+}
+.breadcrumb-wrap.-message .breadcrumb-title {
+  color: #000000;
 }
 
 .breadcrumb {
@@ -581,6 +617,7 @@ a {
 }
 .offcanvas-footer .login-function__item i {
   font-size: 16px;
+  color: #333333;
 }
 .offcanvas-footer .login-function__item .item-title {
   padding-left: 8px;
@@ -1751,6 +1788,77 @@ a {
 .message-desc__text {
   margin: 0px;
   text-align: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.tab-pane .form-group {
+  padding: 16px;
+}
+.tab-pane .btn-group {
+  padding: 0px 16px;
+}
+
+.member-nav + .tab-content {
+  padding-bottom: 28px;
+}
+
+.order {
+  padding: 0px 16px;
+}
+.order .date-filter {
+  padding-bottom: 10px;
+}
+
+.date-filter {
+  flex-wrap: nowrap;
+}
+.date-filter .col:nth-child(2n) {
+  flex: 0;
+  padding: 0px;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.order-list__item {
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+}
+.order-list__item:last-child {
+  margin-bottom: 0px;
+}
+.order-list__item .item-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.order-list__item .item-info__title {
+  font-size: 16px;
+  color: #121212;
+}
+.order-list__item .item-info__result {
+  color: #333333;
+}
+.order-list__item .item-info__result a {
+  color: #3840ff;
+}
+.order-list__item .item-info:last-child {
+  padding-bottom: 0px;
+}
+
+.order-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 16px;
+}
+.order-more__text {
   font-size: 14px;
   color: #999999;
 } /*# sourceMappingURL=main.css.map */

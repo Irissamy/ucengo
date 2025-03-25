@@ -19,6 +19,12 @@
       }
     }
   }
+  &.-message {
+    background-color: $line-gray;
+    .breadcrumb-title {
+      color: $black;
+    }
+  }
 }
 .breadcrumb {
   margin: 0px;
