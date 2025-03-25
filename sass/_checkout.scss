@@ -79,6 +79,9 @@
   padding-bottom: 24px;
   margin-bottom: 16px;
   border-bottom: 1px dashed #e8e8e8;
+  &:first-child {
+    border-bottom: 0px dashed #e8e8e8;
+  }
   .form {
     padding: 16px 10px;
     border-radius: 8px;
@@ -98,6 +101,11 @@
   }
   .terms-link {
     color: $secondary-light;
+  }
+  .form-control {
+    &.-textarea {
+      background-color: $bg-gray;
+    }
   }
 }
 

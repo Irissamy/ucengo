@@ -18,6 +18,10 @@
   display: none;
 }
 
+.form-content {
+  padding: 24px 15px;
+}
+
 .fa-ellipsis-h.more {
   color: #5f80f5;
 }
@@ -1288,6 +1292,9 @@ a {
   margin-bottom: 16px;
   border-bottom: 1px dashed #e8e8e8;
 }
+.form-group:first-child {
+  border-bottom: 0px dashed #e8e8e8;
+}
 .form-group .form {
   padding: 16px 10px;
   border-radius: 8px;
@@ -1307,6 +1314,9 @@ a {
 }
 .form-group .terms-link {
   color: #ffc540;
+}
+.form-group .form-control.-textarea {
+  background-color: #f8f8f8;
 }
 
 .form-label {
