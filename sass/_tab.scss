@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px;
   background-color: $primary;
   &__item {
     position: relative;
@@ -10,7 +9,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 10px 16px;
+    padding: 20px 16px;
     border-right: 0;
     text-align: center;
     text-decoration: none;
@@ -33,17 +32,7 @@
       background-color: #515561;
     }
     &--active {
-      color: #ffffff;
-      font-weight: 600;
-      transition: 0.4s;
-      .text {
-        color: #f9dcb5;
-      }
-      &:after {
-        width: 50px;
-        background-color: #f9dcb5;
-        transition: 0.4s;
-      }
+      background-color: #666cff;
     }
   }
 

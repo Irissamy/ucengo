@@ -227,7 +227,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px;
   background-color: #3840ff;
 }
 .tab__item {
@@ -236,7 +235,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 16px;
+  padding: 20px 16px;
   border-right: 0;
   text-align: center;
   text-decoration: none;
@@ -260,17 +259,7 @@ a {
   background-color: #515561;
 }
 .tab__item--active {
-  color: #ffffff;
-  font-weight: 600;
-  transition: 0.4s;
-}
-.tab__item--active .text {
-  color: #f9dcb5;
-}
-.tab__item--active:after {
-  width: 50px;
-  background-color: #f9dcb5;
-  transition: 0.4s;
+  background-color: #666cff;
 }
 .tab.-scrollable {
   overflow-x: auto;
