@@ -1,0 +1,18 @@
+.marquee {
+  background-color: #333333;
+}
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $secondary-light;
+}
