@@ -80,17 +80,135 @@
   overflow: hidden;
   border-radius: 8px;
 }
-.collapse-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.accordion {
+  margin-top: 10px;
+}
+.accordion-item {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid $line_gray;
+  &:first-of-type {
+    border-radius: 8px;
+    .accordion-button {
+      border-radius: unset;
+    }
+  }
+  &:last-of-type {
+    border-radius: 8px;
+    .accordion-button {
+      border-radius: unset;
+    }
+  }
+  &:not(:first-of-type) {
+    border-top: 1px solid $line_gray;
+    margin-top: 10px;
+  }
+}
+.accordion-button {
+  color: #121212;
+  border-radius: 8px;
+  border: 1px solid $line_gray;
   background-color: $line-gray;
   padding: 8px 20px;
-  &__title {
+  &::after {
+    background-image: url('../images/icon_caret-down-solid.svg');
+    background-size: contain;
+  }
+  &:not(.collapsed) {
+    box-shadow: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: $line-gray;
+    color: #121212;
+    &::after {
+      background-image: url('../images/icon_caret-down-solid.svg');
+    }
+  }
+  &:focus {
+    border-color: transparent;
+  }
+}
+.hr-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e8e8e8;
+    &:first-child {
+      padding-top: 0px;
+    }
+    &:last-child {
+      padding-bottom: 0px;
+      border-bottom: 0px;
+    }
+  }
+  .item-title {
+    margin: 0px;
     font-size: 16px;
     color: #121212;
   }
-  i {
-    color: #121212;
+  .item-result {
+    font-size: 16px;
+    color: $dark-gray;
   }
+}
+.accordion-body {
+  .cart-list {
+    &__item {
+      padding: 24px 0px;
+    }
+    .item-img {
+      margin-left: 0px;
+    }
+  }
+}
+.cancel-btn {
+  padding: 10px 16px 24px;
+  background-color: $line-gray;
+}
+.return {
+  padding: 16px;
+}
+.return-info {
+  color: $light_gray;
+  padding: 16px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid $light_gray;
+  background-color: $dark-gray;
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    color: $light_gray;
+    margin-bottom: 12px;
+  }
+  ol {
+    padding-left: 18px;
+    font-size: 14px;
+    li {
+      padding-bottom: 16px;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 16px;
+      li {
+        padding-bottom: 0px;
+      }
+    }
+  }
+  hr {
+    color: #e8e8e8;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+}
+.return + .btn-group {
+  padding: 0px 16px;
 }
