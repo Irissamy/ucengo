@@ -1,5 +1,11 @@
-<div class="backtop">
+<div class="backtop" onclick="topFunction()">
   <a href="#" class="backtop__icon">
     <i class="fa-solid fa-arrow-up icon-img"></i>
   </a>
 </div>
+<script>
+  function topFunction(e) {
+    event.preventDefault();
+    $('.scroll-content').animate({ scrollTop: 0 }, '500');
+  }
+</script>

@@ -82,8 +82,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   &__count {
-    width: 100%;
+    flex: none;
+    width: calc(100% - 70px);
     height: 100%;
     text-align: center;
     padding: 4px;

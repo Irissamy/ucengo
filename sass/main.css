@@ -26,6 +26,10 @@
   color: #5f80f5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background-image: none;
@@ -822,9 +826,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .spec-count__count {
-  width: 100%;
+  flex: none;
+  width: calc(100% - 70px);
   height: 100%;
   text-align: center;
   padding: 4px;
@@ -1140,6 +1146,7 @@ a {
      object-fit: cover;
 }
 .cart-list .item-info {
+  width: 100%;
   padding-left: 10px;
 }
 .cart-list .item-info__title {
