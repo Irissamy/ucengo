@@ -918,6 +918,8 @@ a {
   display: flex;
   width: 17px;
   height: 17px;
+  font-size: 14px;
+  color: #ffc540;
   margin-right: 4px;
 }
 .evaluate .evaluate-icon__img {
@@ -934,8 +936,10 @@ a {
   border-bottom: 1px solid #e8e8e8;
 }
 .product-evaluate .evaluate-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #ffc540;
 }
 .product-evaluate .evaluate-text {
   color: #333333;
@@ -986,6 +990,8 @@ a {
 .evaluate-list .user-info .evaluate-icon {
   width: 16px;
   height: 16px;
+  font-size: 14px;
+  color: #ffc540;
   margin-right: 0px;
 }
 .evaluate-list .user-feedback {
@@ -1040,6 +1046,8 @@ a {
 .evaluate-range__item .evaluate-icon {
   width: 16px;
   height: 16px;
+  font-size: 14px;
+  color: #ffc540;
   margin-right: 0px;
 }
 .evaluate-range .col:last-child .evaluate-range__item {
