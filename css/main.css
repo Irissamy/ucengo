@@ -105,6 +105,11 @@ a {
   background-color: #ffc540;
 }
 
+.btn-gray {
+  color: white;
+  background-color: #999999;
+}
+
 .btn-light-primary {
   color: #ffffff;
   background-color: rgba(56, 64, 255, 0.6);
@@ -1211,6 +1216,38 @@ a {
 }
 .cart + .product-promo .promo-list__item .item-title {
   color: #02a64d;
+}
+.cart + .product-promo .promo-list__item .item-btn {
+  margin-left: auto;
+  font-size: 14px;
+  color: #f53f6b;
+  text-decoration: underline;
+}
+.cart + .product-promo .promo-list__item .item-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cart + .product-promo .promo-list__item .item-form__input {
+  flex: 1;
+  margin-right: 6px;
+}
+.cart + .product-promo .promo-list__item .item-form__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart + .product-promo .promo-list__item.-form {
+  background-color: transparent;
+  padding: 0px;
+}
+.cart + .product-promo .promo-list__item.-form .form-control {
+  height: 40px;
+}
+.cart + .product-promo .promo-list__item.-form .btn {
+  line-height: 1;
+  padding: 12px 16px;
+  font-size: 16px;
 }
 
 .cart-detail {

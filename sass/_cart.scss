@@ -90,6 +90,39 @@
       .item-title {
         color: $success;
       }
+      .item-btn {
+        margin-left: auto;
+        font-size: 14px;
+        color: #f53f6b;
+        text-decoration: underline;
+      }
+      .item-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &__input {
+          flex: 1;
+          margin-right: 6px;
+        }
+        &__btn {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &.-form {
+        background-color: transparent;
+        padding: 0px;
+        .form-control {
+          height: 40px;
+        }
+
+        .btn {
+          line-height: 1;
+          padding: 12px 16px;
+          font-size: 16px;
+        }
+      }
     }
   }
 }

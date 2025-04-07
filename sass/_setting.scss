@@ -133,6 +133,10 @@ a {
     background-color: $secondary-light;
   }
 }
+.btn-gray {
+  color: white;
+  background-color: $icon-gray;
+}
 .btn-light-primary {
   color: $white;
   background-color: rgba($primary, 0.6);
