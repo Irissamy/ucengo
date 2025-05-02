@@ -10,8 +10,11 @@
 .scroll-content {
   overflow-y: auto;
   height: 100%;
-  &::-webkit-scrollbar {
-    display: none;
+  div {
+    /* 不顯示滾動條 */
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 .form-content {
