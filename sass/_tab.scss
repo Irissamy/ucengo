@@ -49,3 +49,62 @@
     }
   }
 }
+.tag-tab {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 16px 12px;
+  background-color: #f8f8f8;
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #3840ffcc;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 8px;
+    .text {
+      color: #3840ffcc;
+      font-size: 16px;
+      line-height: 1;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 2px;
+      background-color: #515561;
+    }
+    &--active {
+      background-color: #666cff;
+      .text {
+        color: #f0f0f0;
+      }
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  //scroll
+  &.-scrollable {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    .tag-tab__item {
+      width: 100%;
+      .text {
+        white-space: nowrap;
+      }
+    }
+  }
+}
